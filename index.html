@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BARBACOA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; color: #333; line-height: 1.6; }
+        header { background-color: #000; color: #fff; padding: 1rem 0; text-align: center; position: fixed; top: 0; width: 100%; z-index: 1000; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .navbar .logo h1 { font-size: 2rem; color: #fff; }
+        .navbar .menu { list-style-type: none; }
+        .navbar .menu li { display: inline-block; margin-left: 2rem; }
+        .navbar .menu li a { text-decoration: none; color: white; font-size: 1rem; }
+        .productos { padding: 4rem 2rem; text-align: center; margin-top: 6rem; position: relative; }
+        .productos h2 { font-size: 2.5rem; margin-bottom: 3rem; }
+        .producto-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2rem; justify-items: center; }
+        .producto { max-width: 150px; background-color: #f9f9f9; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+        .producto img { max-width: 100%; border-radius: 10px; }
+        .whatsapp-icon { color: #25D366; font-size: 1.5rem; text-decoration: none; display: inline-block; margin-top: 1rem; }
+        .order-icon { 
+            position: absolute; 
+            top: 2rem; 
+            right: 2rem; 
+            background: #f9f9f9; 
+            border-radius: 10px; 
+            padding: 0.5rem; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+            text-align: center; 
+            animation: bounce 1s infinite alternate; 
+        }
+        .order-text { font-size: 0.8rem; }
+        
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        
+        .footer { background-color: #000; color: white; text-align: center; padding: 2rem 0; }
+        .footer p { margin-bottom: 1rem; }
+        .footer .social-icons { margin-top: 1rem; }
+        .footer .social-icons a { color: #fff; margin: 0 1rem; font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>BARBACOA CHIAPANECA 🌮</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Terminos y condiciones</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos" class="productos">
+        <h2>Menú del Día 😋</h2>
+        <div class="producto-grid">
+            <div class="producto">
+                <img src="imagen/imagen15.jpg" alt="Producto 1">
+                <h3>Barbacoa en caldo</h3>
+                <p>Es 1/2kg de carne y un litro de consomé</p>
+                <p>$100</p>
+            </div>
+            <div class="producto">
+                <img src="imagen/imagen21.jpg" alt="Producto 2">
+                <h3>Agua de jamaica</h3>
+                <p>botella de 600ml</p>
+                <p>$15</p>
+            </div>
+            <div class="producto">
+                <img src="imagen/imagen22.jpg" alt="Producto 3">
+                <h3>salsa verde</h3>
+                <p>salsa extra</p>
+                <p>$15</p>
+            </div>
+            <div class="producto">
+                <img src="imagen/imagen23.jpg" alt="Producto 4">
+                <h3>Tacos de barbacoa</h3>
+                <p>Es una orden con 5 tacos incluye salsa y verduras</p>
+                <p>$90</p>
+            </div>
+            <div class="producto">
+                <img src="imagen/imagen25.jpg" alt="Producto 5">
+                <h3>Barbacoa seca</h3>
+                <p>1kg de barbacoa en toso (seca) incluye salsa y verduras y 10 tortillas</p>
+                <p>$160</p>
+            </div>
+        </div>
+        
+        <div class="order-icon">
+            <a href="https://wa.me/528442745389?text=Hola%2C%20qu%C3%A9%20tal%20Por%20favor%2C%20confirme%20su%20pedido%20con%20los%20siguientes%20detalles%3A%0A1.%20Platillo%3F%0A2.%20Agua%3F%0AEn%20caso%20de%20que%20quiera%20agregar%20otra%20cosa%20aquí...%0A%0AExtras%3A%0A1.%0A2.%0A3.%0A4.....%0A" target="_blank">
+                <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25D366;"></i>
+            </a>
+            <div class="order-text">Haz tu pedido</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 barbacoa. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
